@@ -1,0 +1,85 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d80a6f74-d022-4e58-8bc4-bf39bd191580</ProjectGuid>
+    <ProjectTypeGuids>{6c0efafa-1a04-41b6-a6d7-511b90951b5b};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>regression.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>LKJK</Name>
+    <RootNamespace>PythonRegressionApplication1</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.5</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="pattern_vs_song.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pitch_snare.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="song_bpm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tempo_tracker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pitch_kick.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="regression.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda35-64" />
+    <InterpreterReference Include="Global|PythonCore|3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\pattern\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\50 Cent-01-Baby By Me %28Feat. Ne-Yo%29.mp3" />
+    <Content Include="assets\Ariana Grande-03-One Last Time.mp3" />
+    <Content Include="assets\Audien-12-Serotonin %28Radio Edit%29 - Copy.mp3" />
+    <Content Include="assets\Ciara-02-That`s How I`m Feelin` %28Feat. Pitbull &amp; Missy Elliott%29 - Copy.mp3" />
+    <Content Include="assets\Clean Bandit-01-Rockabye %28Feat. Sean Paul &amp; Anne-Marie%29 - Copy.mp3" />
+    <Content Include="assets\Ellie Goulding-01-Love Me Like You Do %28영화 `그레이의 50가지 그림자` OST%29 %28From `Fifty Shades Of Grey`%29.mp3" />
+    <Content Include="assets\Jeremih-01-Tonight Belongs To U! %28Feat. Flo Rida%29.mp3" />
+    <Content Include="assets\Massive_DItto__AVoke_Original_Mix.mp3" />
+    <Content Include="assets\pattern\1.CSV" />
+    <Content Include="assets\pattern\10.CSV" />
+    <Content Include="assets\pattern\11.CSV" />
+    <Content Include="assets\pattern\12.CSV" />
+    <Content Include="assets\pattern\2.CSV" />
+    <Content Include="assets\pattern\3.CSV" />
+    <Content Include="assets\pattern\4.CSV" />
+    <Content Include="assets\pattern\5.CSV" />
+    <Content Include="assets\pattern\6.CSV" />
+    <Content Include="assets\pattern\7.CSV" />
+    <Content Include="assets\pattern\8.CSV" />
+    <Content Include="assets\pattern\9.CSV" />
+    <Content Include="assets\Sander Van Doorn-01-Gold Skies %28Radio Edit%29 %28Feat. Aleesia%29.mp3" />
+    <Content Include="assets\STEVE AOKI-01-Back To Earth %28feat. Fall Out Boy%29 %28Club Edition%29 - Copy.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
